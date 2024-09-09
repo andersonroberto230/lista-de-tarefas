@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Minhas tarefas</title>
+
+</head>
+<body>
+    <h1>Tarefas</h1>
+    <ul>
+        <li></li>
+
+    </ul>
+    
+    <input type="inserir">
+    <button onclick="adicionar()">enviar</button>
+
+</body>
+<script>  
+    function adicionar(){
+        const ul = document.querySelector("ul")
+        const imput = document.querySelector("input")
+        const tarefas = imput.value 
+        // pegar o texto que está dentro do imput
+
+        const li= document.createElement("li")
+        //criar um elemento li
+        li.innerText = tarefas
+        //esse comando fala que o que está dentro do li é igual a tarefas
+        ul.appendChild(li)
+        //colocando o li dentro da UL
+
+
+    }
+
+
+</script>
+
+
+
+</html>
