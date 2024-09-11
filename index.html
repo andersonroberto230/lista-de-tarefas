@@ -7,16 +7,57 @@
 
 </head>
 <body>
-    <h1>Tarefas</h1>
-    <ul>
-        <li></li>
+    <header>
+        <h1>Tarefas</h1>
+    </header>
+    <main>
+        <ul>
+            <li></li>
 
-    </ul>
-    
-    <input type="inserir">
-    <button onclick="adicionar()">enviar</button>
+        </ul>
+    </main>
+    <footer>
+        <input type="inserir">
+        <button onclick="adicionar()">enviar</button>
+    </footer>
 
-</body>
+    <style>
+        body{
+           
+            border: 10px solid darkgrey;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: 'Times New Roman';
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            text-align: center;
+            background: darkgrey;
+        }
+        main{
+            padding: 20px;
+            flex: auto;
+            border-radius:  20px;
+        }
+        footer{
+            display: flex;
+        }
+        footer input{
+            flex: auto;
+        }
+        main ul{
+            list-style: none;
+        }
+        main li{
+            border-bottom: 1px solid darkgray;
+
+        }
+
+    </style>
+
 <script>  
     function adicionar(){
         const ul = document.querySelector("ul")
@@ -25,18 +66,18 @@
         // pegar o texto que está dentro do imput
 
         const li= document.createElement("li")
-        //criar um elemento li
+        //criar um elemento liborder: 20px blue;
         li.innerText = tarefas
         //esse comando fala que o que está dentro do li é igual a tarefas
         ul.appendChild(li)
         //colocando o li dentro da UL
+
+        imput.value = ""
 
 
     }
 
 
 </script>
-
-
-
+</body>
 </html>
